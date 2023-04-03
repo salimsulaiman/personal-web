@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.text-center {
+  text-align: center;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.display-1 {
+  font-size: 36px;
+}
+
+.btn {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+/* button */
+
+.btn-primary {
+  color: #fff;
+  background-color: #896df6;
+}
+.btn-primary:hover {
+  background-color: #7e5eff;
+}
+.color-primary {
+  color: #896df6;
+}
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* justify-content */
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+.container {
+  min-width: 1028px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 50px;
+  background-color: #f5f5f5;
+  background-size: cover;
+}
+
+.hero .container-fluid {
+  min-height: 750px;
+  padding: 1rem 7rem;
+  color: #1e293b;
+  overflow: hidden;
+  position: relative;
+}
+.hero .image-cover {
+  position: absolute;
+  right: -100px;
+  bottom: -100px;
+  width: 1000px;
+}
+.hero img {
+  width: 100%;
+}
+
+.hero .desc {
+  z-index: 99;
+}
+
+.desc p {
+  margin-top: -20px;
+}
+
+nav {
+  padding: 10px 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.nav-brand {
+  color: #cfd0d5;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-brand img {
+  margin-right: -10px;
+  margin-left: 10px;
+  width: 40px;
+  border-radius: 100%;
+}
+.nav-item li {
+  list-style-type: none;
+  padding: 0 10px;
+  font-weight: 500;
+}
+.nav-item li a {
+  text-decoration: none;
+  color: #334155;
+}
+.nav-item li a:hover {
+  color: #896df6;
+}
+
+.about {
+  width: 100%;
+  min-height: 500px;
+  background-color: #e8ebec;
+  color: #1e293b;
+}
+.about .container {
+  padding: 80px;
+}
+
+.about hr {
+  width: 100px;
+  border: none;
+  border-bottom: #896df6 solid 2px;
+  margin-left: 0;
+}
