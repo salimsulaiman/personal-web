@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap");
 
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -7,20 +10,105 @@ body {
   font-weight: 500;
 }
 
+/* font-weigth */
+.fw-100 {
+  font-weight: 100;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+/* max-width */
+.mw-600 {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* position */
+.p-relative {
+  position: relative;
+}
+
+.p {
+  position: absolute;
+}
+/* color */
+
+.color-primary {
+  color: #896df6;
+}
+.color-slate-100 {
+  color: #f1f5f9;
+}
+.color-slate-200 {
+  color: #e2e8f0;
+}
+.color-slate-300 {
+  color: #cbd5e1;
+}
+.color-slate-400 {
+  color: #94a3b8;
+}
+.color-slate-600 {
+  color: #475569;
+}
+.color-slate-800 {
+  color: #1e293b;
+}
+
+/* background-color */
+
+.background-color-slate-200 {
+  background-color: #e2e8f0;
+}
+.background-color-slate-300 {
+  background-color: #cbd5e1;
+}
+.background-color-slate-400 {
+  background-color: #94a3b8;
+}
+.background-color-slate-600 {
+  background-color: #475569;
+}
 .text-center {
   text-align: center;
 }
 .mt-20 {
   margin-top: 20px;
 }
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
 .display-1 {
   font-size: 36px;
 }
 
 .btn {
+  display: inline-block;
   text-decoration: none;
   border-radius: 8px;
   padding: 10px 20px;
+}
+
+.btn-full {
+  width: 100%;
 }
 /* button */
 
@@ -31,11 +119,25 @@ body {
 .btn-primary:hover {
   background-color: #7e5eff;
 }
-.color-primary {
+
+.btn-outline-primary {
+  border: solid 1px #896df6;
   color: #896df6;
+}
+.btn-outline-primary:hover {
+  border: solid 1px #7e5eff;
+  color: #fff;
+  background-color: #896df6;
 }
 .d-flex {
   display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
 .align-center {
@@ -46,12 +148,20 @@ body {
 .justify-content-space-between {
   justify-content: space-between;
 }
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
 
 .justify-content-start {
   justify-content: start;
 }
+
+.justify-content-center {
+  justify-content: center;
+}
 .container {
-  min-width: 1028px;
+  color: #1e293b;
+  max-width: 1280px;
   padding: 20px;
   margin: 0 auto;
 }
@@ -86,7 +196,7 @@ body {
 }
 
 .desc p {
-  margin-top: -20px;
+  margin: -20px 0;
 }
 
 nav {
@@ -131,10 +241,111 @@ nav {
 .about .container {
   padding: 80px;
 }
+.skills .container {
+  padding: 80px;
+}
 
-.about hr {
+.line {
   width: 100px;
   border: none;
   border-bottom: #896df6 solid 2px;
-  margin-left: 0;
+}
+
+.about img {
+  width: 350px;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+.about .desc {
+  flex-grow: 2;
+  margin: 0 50px;
+}
+.desc p {
+  line-height: 30px;
+}
+
+.card {
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.105);
+}
+
+.card-background {
+  width: 100%;
+  height: 150px;
+  background-color: #7e5eff;
+}
+.card-content {
+  flex: 1;
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.articles {
+  background-color: #f5f5f5;
+}
+.articles .container {
+  max-width: 1024px;
+  padding: 80px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.item {
+  padding: 10px;
+}
+
+footer .container {
+  max-width: 1024px;
+  padding: 10px 80px;
+  overflow: hidden;
+}
+
+footer h1 {
+  display: inline-block;
+  z-index: 1;
+  font-size: 144px;
+  letter-spacing: 0.4em;
+  text-indent: 0.4em;
+}
+footer h2 {
+  z-index: 1;
+  font-size: 32px;
+}
+
+.contact {
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 2;
+}
+
+.icon-footer {
+  padding: 5px;
+  border-radius: 100%;
+  margin: 0 8px;
+}
+
+.icon-footer img {
+  width: 20px;
+}
+
+footer hr {
+  border: none;
+  border-bottom: #475569 solid 1px;
+  margin: 50px 0;
 }
