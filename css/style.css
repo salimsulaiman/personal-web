@@ -320,6 +320,7 @@ footer h1 {
   font-size: 144px;
   letter-spacing: 0.4em;
   text-indent: 0.4em;
+  cursor: default;
 }
 footer h2 {
   z-index: 1;
