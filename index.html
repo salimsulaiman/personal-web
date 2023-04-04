@@ -7,28 +7,28 @@
     <title>Salim Sulaiman</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body id="home">
     <nav>
       <div class="d-flex align-center justify-content-start">
         <div class="nav-brand d-flex align-center"><img src="assets/avatar.png" alt="" /></div>
         <div class="nav-item">
           <ul class="d-flex">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Articles</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#articles">Articles</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="container-fluid d-flex justify-content-space-between align-center">
         <div class="desc">
           <h1 class="display-1">Hey, I'm <span class="color-primary">Salim Sulaiman</span></h1>
           <p class="color-slate-600">Someone who's interested with</p>
           <h2>Programmer | Designer | Editor</h2>
-          <a href="" class="btn btn-primary">Show more</a>
+          <a href="#about" class="btn btn-primary">Show more</a>
         </div>
         <div class="image-cover">
           <img src="assets/hero-image.png" alt="" />
@@ -36,7 +36,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h3 class="color-primary text-center">About</h3>
         <hr class="line" />
@@ -55,7 +55,7 @@
       </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="container text-center">
         <h3 class="color-primary">Skills</h3>
         <hr class="line" />
@@ -64,7 +64,7 @@
       </div>
     </section>
 
-    <section class="articles">
+    <section class="articles" id="articles">
       <div class="container">
         <h3 class="color-primary text-center">Articles</h3>
         <hr class="line" />
@@ -74,7 +74,7 @@
             <div class="card">
               <div class="card-background"></div>
               <div class="card-content">
-                <h3>Build website with javascript</h3>
+                <h3 class="fw-600">Build website with javascript</h3>
                 <p class="color-slate-600">
                   To make your website more interactive, you can add javascript into your website.
                 </p>
@@ -86,7 +86,7 @@
             <div class="card">
               <div class="card-background"></div>
               <div class="card-content">
-                <h3>Build website with javascript</h3>
+                <h3 class="fw-600">Build website with javascript</h3>
                 <p class="color-slate-600">
                   To make your website more interactive, you can add javascript into your website.
                 </p>
@@ -98,7 +98,7 @@
             <div class="card">
               <div class="card-background"></div>
               <div class="card-content">
-                <h3>Build website with javascript</h3>
+                <h3 class="fw-600">Build website with javascript</h3>
                 <p class="color-slate-600">
                   To make your website more interactive, you can add javascript into your website.
                 </p>
@@ -140,6 +140,11 @@
         </div>
       </div>
     </footer>
+    <a href="#home" id="fl-btn">
+      <div class="floating-button d-flex justify-content-center align-center">
+        <img src="assets/icon/up-arrow.png" alt="" />
+      </div>
+    </a>
 
     <script src="js/script.js"></script>
   </body>

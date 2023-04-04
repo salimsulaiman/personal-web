@@ -2,12 +2,14 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  position: relative;
 }
 
 /* font-weigth */
@@ -128,6 +130,28 @@ body {
   border: solid 1px #7e5eff;
   color: #fff;
   background-color: #896df6;
+}
+#fl-btn {
+  display: none;
+}
+.floating-button {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 100%;
+  position: fixed;
+  background-color: #896df6;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px;
+  cursor: pointer;
+}
+.floating-button:hover {
+  background-color: #7e5eff;
+}
+
+.floating-button img {
+  width: 100%;
 }
 .d-flex {
   display: flex;
