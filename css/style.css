@@ -198,6 +198,7 @@ body {
 }
 
 .container-fluid {
+  display: flex;
   box-sizing: border-box;
   width: 100%;
   padding: 50px;
@@ -276,6 +277,13 @@ nav {
   padding: 80px;
 }
 
+.project {
+  background-color: #e8ebec;
+}
+.project .container {
+  padding: 80px;
+}
+
 .line {
   width: 100px;
   border: none;
@@ -290,7 +298,7 @@ nav {
 
 .about .desc {
   flex-grow: 2;
-  margin: 0 50px;
+  padding: 0 50px;
 }
 .desc p {
   line-height: 30px;
@@ -322,6 +330,7 @@ nav {
 }
 
 .card-skills {
+  cursor: default;
   transition: background-color 0.5s ease-out 100ms, color 0.2s ease-out 100ms;
   background-color: #edf2f7;
   padding: 15px;
@@ -409,4 +418,25 @@ footer hr {
   border: none;
   border-bottom: #475569 solid 1px;
   margin: 50px 0;
+}
+
+@media only screen and (max-width: 1280px) {
+  .hero .desc span {
+    color: #fff;
+    mix-blend-mode: multiply;
+  }
+  .hero .btn-primary {
+    border: 1px solid #fff;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero .desc span {
+    color: #896df6;
+  }
+  .hero .container-fluid {
+  }
+  .hero .image-cover {
+    display: none;
+  }
 }
