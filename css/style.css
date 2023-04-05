@@ -98,6 +98,13 @@ body {
 .mt-50 {
   margin-top: 50px;
 }
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
 .display-1 {
   font-size: 36px;
 }
@@ -314,6 +321,30 @@ nav {
   width: 100%;
 }
 
+.card-skills {
+  transition: background-color 0.5s ease-out 100ms, color 0.2s ease-out 100ms;
+  background-color: #edf2f7;
+  padding: 15px;
+  border: solid 1px #94a3b8;
+  border-radius: 8px;
+  min-height: 300px;
+}
+.card-skills:hover {
+  background-color: #896df6;
+  color: #fff;
+}
+
+.card-skills h1 {
+  color: #1e293b;
+}
+
+.card-skills p {
+  margin-top: -20px;
+}
+
+.card-skills img {
+  width: 100px;
+}
 .articles {
   background-color: #f5f5f5;
 }
@@ -325,6 +356,11 @@ nav {
 .row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+.row-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
 }
 
